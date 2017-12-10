@@ -1,5 +1,4 @@
 /*
- * PCGenSettings.java
  * Copyright 2010 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -21,9 +20,9 @@ package pcgen.system;
 
 import java.io.File;
 
-import org.apache.commons.lang3.SystemUtils;
-
 import pcgen.output.publish.OutputDB;
+
+import org.apache.commons.lang3.SystemUtils;
 
 /**
  * This stores some of the properties that pcgen uses.

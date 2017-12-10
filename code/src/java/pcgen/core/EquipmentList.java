@@ -1,5 +1,4 @@
 /*
- * EquipmentList.java
  * Copyright 2003 (C) Jonas Karlsson <jujutsunerd@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
@@ -258,20 +257,26 @@ public final class EquipmentList {
 			//
 			// Now attempt to add all the modifiers.
 			//
-			for (Iterator<String> e = modList.iterator(); e.hasNext();) {
-				final String namePart = e.next();
+			for (final String namePart : modList)
+			{
 				final EquipmentModifier eqMod = getQualifiedModifierNamed(namePart, eq);
 
-				if (eqMod != null) {
+				if (eqMod != null)
+				{
 					eq.addEqModifier(eqMod, true, aPC);
 
-					if (eqMod.getSafe(ObjectKey.ASSIGN_TO_ALL) && eq.isDouble()) {
+					if (eqMod.getSafe(ObjectKey.ASSIGN_TO_ALL) && eq.isDouble())
+					{
 						eq.addEqModifier(eqMod, false, aPC);
 						bModified = true;
 					}
-				} else {
-					Logging.errorPrint("Could not find a qualified modifier named: " + namePart + " for " + eq.getName() + ":"
-							+ eq.typeList());
+				}
+				else
+				{
+					Logging.errorPrint(
+							"Could not find a qualified modifier named: " + namePart
+									+ " for " + eq.getName() + ":"
+									+ eq.typeList());
 					bError = true;
 				}
 			}
@@ -434,7 +439,7 @@ public final class EquipmentList {
 					if (eqMod == null) {
 						Logging
 						.debugPrint("Could not generate a Masterwork "
-							+ eq.toString()
+							+ eq
 							+ " as the equipment modifier could not be found.");
 						continue;
 					}
@@ -460,7 +465,7 @@ public final class EquipmentList {
 								.debugPrint("Could not generate a "
 									+ aBonus
 									+ " "
-									+ eq.toString()
+									+ eq
 									+ " as the equipment modifier could not be found.");
 							continue;
 						}

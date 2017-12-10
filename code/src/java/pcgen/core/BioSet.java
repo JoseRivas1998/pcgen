@@ -27,6 +27,7 @@ import java.util.SortedMap;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
 import pcgen.base.util.CaseInsensitiveMap;
 import pcgen.base.util.DoubleKeyMap;
 import pcgen.base.util.TripleKeyMapToList;
@@ -230,8 +231,8 @@ public final class BioSet extends PObject implements NonInteractive
 	public String toString()
 	{
 		final StringBuilder sb = new StringBuilder(100);
-		sb.append("AgeMap: ").append(ageMap.toString()).append("\n");
-		sb.append("UserMap: ").append(userMap.toString()).append("\n");
+		sb.append("AgeMap: ").append(ageMap).append("\n");
+		sb.append("UserMap: ").append(userMap).append("\n");
 
 		return sb.toString();
 	}
@@ -426,8 +427,8 @@ public final class BioSet extends PObject implements NonInteractive
 				// Barbarian,Rogue,Sorcerer[BASEAGEADD:3d6]
 				String aString = aTok.nextToken();
 
-				final int start = aString.indexOf("[");
-				final int end = aString.indexOf("]");
+				final int start = aString.indexOf('[');
+				final int end = aString.indexOf(']');
 
 				// should be BASEAGEADD:xdy
 				String dieString = aString.substring(start + 1, end);
@@ -520,7 +521,7 @@ public final class BioSet extends PObject implements NonInteractive
 		final String htwt = getTokenNumberInMaps("SEX", 0, pc.getDisplay().getRegionString(), pc
 			.getRace().getKeyName().trim());
 
-		if (htwt == null)
+		if (htwt == null || htwt == "0")
 		{
 			return;
 		}
@@ -575,7 +576,6 @@ public final class BioSet extends PObject implements NonInteractive
 
 				break;
 			}
-			genderTok.nextToken(); // burn next token
 		}
 	}
 

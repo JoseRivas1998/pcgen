@@ -1,5 +1,4 @@
 /*
- * AttackType.java
  * Missing License Header, Copyright 2016 (C) Andrew Maitland <amaitland@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
@@ -42,7 +41,7 @@ public enum AttackType
 		return identifier;
 	}
 
-	public static AttackType getInstance(String ident)
+	public static AttackType getAttackInstance(String ident)
 	{
 		for (AttackType at : AttackType.values())
 		{

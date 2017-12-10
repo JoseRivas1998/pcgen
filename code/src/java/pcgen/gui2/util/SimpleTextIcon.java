@@ -1,5 +1,4 @@
 /*
- * SimpleTextIcon.java
  * Copyright 2008 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -23,6 +22,8 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.SystemColor;
+
 import javax.swing.Icon;
 
 /**
@@ -48,7 +49,7 @@ public class SimpleTextIcon implements Icon
 	 */
 	public SimpleTextIcon(Component c, String text)
 	{
-		this(c, text, Color.BLACK);
+		this(c, text, SystemColor.text);
 	}
 
 	/**

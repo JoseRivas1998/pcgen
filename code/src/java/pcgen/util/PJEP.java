@@ -22,16 +22,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import pcgen.core.PlayerCharacter;
+import pcgen.core.VariableProcessor;
+import pcgen.persistence.lst.LstUtils;
+import pcgen.system.PluginLoader;
+
 import org.nfunk.jep.ASTFunNode;
 import org.nfunk.jep.JEP;
 import org.nfunk.jep.Node;
 import org.nfunk.jep.ParseException;
 import org.nfunk.jep.function.PostfixMathCommand;
-
-import pcgen.core.PlayerCharacter;
-import pcgen.core.VariableProcessor;
-import pcgen.persistence.lst.LstUtils;
-import pcgen.system.PluginLoader;
 
 /**
  * {@code PJEP}
@@ -290,7 +290,7 @@ public final class PJEP extends JEP
 	 * @return Returns the variableSource.
 	 */
 	@Deprecated
-	protected String getVariableSource()
+	private String getVariableSource()
 	{
 		return variableSource;
 	}

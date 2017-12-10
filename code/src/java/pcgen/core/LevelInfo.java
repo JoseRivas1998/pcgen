@@ -1,5 +1,4 @@
 /*
- * LevelInfo.java
  * Copyright 2002 (C) James Dempsey
  *
  * This library is free software; you can redistribute it and/or
@@ -18,9 +17,9 @@
  */
 package pcgen.core;
 
-import pcgen.util.Logging;
-
 import java.math.BigDecimal;
+
+import pcgen.util.Logging;
 
 /**
  * {@code LevelInfo} describes the data associated with a level

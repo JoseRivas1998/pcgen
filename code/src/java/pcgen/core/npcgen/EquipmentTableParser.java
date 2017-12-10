@@ -1,5 +1,4 @@
 /*
- * EquipmentTableParser.java
  * Copyright 2006 (C) Aaron Divinsky <boomer70@yahoo.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -412,6 +411,7 @@ public class EquipmentTableParser
 			}
 			else if ( "eqmod".equals(qName) ) //$NON-NLS-1$
 			{
+				// Do nothing
 				;
 			}
 	    }

@@ -1,5 +1,4 @@
 /*
- * PCLevelInfo.java
  * Copyright 2001 (C) Greg Bingleman <byngl@hotmail.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -52,7 +51,6 @@ public final class PCLevelInfo implements Cloneable
 	 */
 	public PCLevelInfo(final String argClassKeyName)
 	{
-		super();
 		classKeyName = argClassKeyName;
 	}
 
@@ -361,8 +359,8 @@ public final class PCLevelInfo implements Cloneable
 				&& classKeyName.equals(other.classKeyName)
 				&& ObjectUtil.compareWithNull(statsPreModified,
 					other.statsPreModified)
-				&& ObjectUtil.compareWithNull(statsPreModified,
-					other.statsPreModified);
+				&& ObjectUtil.compareWithNull(statsPostModified,
+					other.statsPostModified);
 		}
 		return false;
 	}

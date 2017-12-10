@@ -1,5 +1,4 @@
 /*
- * ParameterTree.java
  * Copyright 2007 (C) Andrew Wilson <nuance@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
@@ -18,10 +17,10 @@
  */
 package pcgen.util;
 
-import org.nfunk.jep.ParseException;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.nfunk.jep.ParseException;
 
 public class ParameterTree
 {

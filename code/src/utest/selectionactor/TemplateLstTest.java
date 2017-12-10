@@ -19,9 +19,8 @@ package selectionactor;
 
 import pcgen.cdom.base.ChooseSelectionActor;
 import pcgen.core.PCTemplate;
-
-import org.junit.Test;
 import plugin.lsttokens.TemplateLst;
+
 import selectionactor.testsupport.AbstractSelectionActorTest;
 
 public class TemplateLstTest extends AbstractSelectionActorTest<PCTemplate>

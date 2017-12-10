@@ -3,31 +3,38 @@
  * called from the main build.gradle file.
  *
  * Usage: gradle allReports
- * 
- * Author: James Dempsey 
  */
+
+buildScan {
+	licenseAgreementUrl = 'https://gradle.com/terms-of-service';
+	licenseAgree = 'yes'
+}
 
 checkstyle {
 	configFile = new File('code/standards/checkstyle.xml')
 	ignoreFailures = true
 	showViolations = false
+	toolVersion = '8.1'
 	sourceSets = []
 }
 
 pmd {
-    // turn off the default rules
-    ruleSets = []
+	// turn off the default rules
+	ruleSets = []
 	ruleSetFiles = files('code/standards/pmdruleset.xml')
-	
-	ignoreFailures = true
+	consoleOutput = true
 	sourceSets = []
-	toolVersion = "5.5.1"
+	toolVersion = "5.8.1"
 }
 
 findbugs {
 	ignoreFailures = true
 //	effort = 'max'
 	sourceSets = []
+}
+
+task findbugs(type: FindBugs) {
+   pluginClasspath = project.configurations.findbugsPlugins
 }
 
 tasks.withType(FindBugs) {
@@ -43,7 +50,6 @@ tasks.withType(FindBugs) {
 	}
 }
 
-// unused: dependency-tuple, unused-dependency, duplicate-dependency-class
 gradleLint.rules = [
 	'dependency-parentheses',
 	'unused-exclude-by-dep',

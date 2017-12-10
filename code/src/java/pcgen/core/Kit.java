@@ -1,5 +1,4 @@
 /*
- * Kit.java
  * Copyright 2001 (C) Greg Bingleman <byngl@hotmail.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -33,12 +32,12 @@ import pcgen.cdom.enumeration.ObjectKey;
 import pcgen.cdom.enumeration.SourceFormat;
 import pcgen.cdom.enumeration.Type;
 import pcgen.core.analysis.OutputNameFormatting;
-import pcgen.facade.core.KitFacade;
 import pcgen.core.kit.BaseKit;
 import pcgen.core.kit.KitStat;
 import pcgen.core.kit.KitTable;
 import pcgen.core.prereq.PrereqHandler;
 import pcgen.core.prereq.PrerequisiteUtilities;
+import pcgen.facade.core.KitFacade;
 import pcgen.util.Logging;
 import pcgen.util.enumeration.View;
 import pcgen.util.enumeration.Visibility;
@@ -391,7 +390,7 @@ public final class Kit extends PObject implements Comparable<Object>, KitFacade
 			{
 				info.append(", ");
 			}
-			info.append(bk.toString());
+			info.append(bk);
 		}
 		info.append("  <b>Source</b>: ").append(SourceFormat.getFormattedString(this,
 		Globals.getSourceDisplay(), true));

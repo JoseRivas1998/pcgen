@@ -44,6 +44,11 @@ import pcgen.pluginmgr.messages.RequestOpenPlayerCharacterMessage;
 import pcgen.pluginmgr.messages.RequestToSavePlayerCharacterMessage;
 import pcgen.pluginmgr.messages.TransmitInitiativeValuesBetweenComponentsMessage;
 import pcgen.system.PCGenSettings;
+import plugin.initiative.gui.Initiative;
+import plugin.initiative.gui.PreferencesDamagePanel;
+import plugin.initiative.gui.PreferencesInitiativePanel;
+import plugin.initiative.gui.PreferencesMassiveDamagePanel;
+import plugin.initiative.gui.PreferencesPerformancePanel;
 
 import gmgen.GMGenSystem;
 import gmgen.GMGenSystemView;
@@ -59,16 +64,10 @@ import gmgen.pluginmgr.messages.GMGenBeingClosedMessage;
 import gmgen.pluginmgr.messages.RequestAddPreferencesPanelMessage;
 import gmgen.pluginmgr.messages.RequestAddTabToGMGenMessage;
 import gmgen.util.LogUtilities;
-import plugin.initiative.gui.Initiative;
-import plugin.initiative.gui.PreferencesDamagePanel;
-import plugin.initiative.gui.PreferencesInitiativePanel;
-import plugin.initiative.gui.PreferencesMassiveDamagePanel;
-import plugin.initiative.gui.PreferencesPerformancePanel;
 
 /**
  * The {@code ExperienceAdjusterController} handles the functionality of
- * the Adjusting of experience. This class is called by the {@code GMGenSystem
- * }
+ * the Adjusting of experience. This class is called by the {@code GMGenSystem}
  * and will have it's own model and view. <br>
  */
 public class InitiativePlugin implements InteractivePlugin

@@ -16,15 +16,13 @@
  *  License along with this library; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
- *  PreferencesDialog.java
  *
- *  Created on August 29, 2002, 2:17 PM
  */
 package gmgen.gui;
 
-import gmgen.GMGenSystem;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -34,8 +32,11 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.UIManager;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+
 import pcgen.core.SettingsHandler;
 import pcgen.gui2.dialog.AbstractPreferencesDialog;
+
+import gmgen.GMGenSystem;
 
 public class PreferencesDialog extends AbstractPreferencesDialog
 {

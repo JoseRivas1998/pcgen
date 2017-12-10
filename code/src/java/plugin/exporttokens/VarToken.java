@@ -90,7 +90,7 @@ public class VarToken extends Token
 		}
 		while (aTok.hasMoreElements())
 		{
-			varName.append(".").append(aTok.nextToken());
+			varName.append('.').append(aTok.nextToken());
 		}
 
 		if (isInt)
@@ -99,12 +99,12 @@ public class VarToken extends Token
 			{
 				return Delta.toString(pc.getVariable(varName.toString(), !isMin).intValue());
 			}
-			return pc.getVariable(varName.toString(), !isMin).intValue() + "";
+			return String.valueOf(pc.getVariable(varName.toString(), !isMin).intValue());
 		}
 		if (isSign)
 		{
 			return Delta.toString((float) pc.getVariable(varName.toString(), !isMin));
 		}
-		return pc.getVariable(varName.toString(), !isMin) + "";
+		return String.valueOf(pc.getVariable(varName.toString(), !isMin));
 	}
 }

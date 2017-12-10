@@ -1,5 +1,4 @@
 /*
- * NPCGenerator.java
  * Copyright 2006 (C) Aaron Divinsky <boomer70@yahoo.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -606,7 +605,7 @@ public final class NPCGenerator
 						{
 							break;
 						}
-						if (aClass.getSafe(ObjectKey.VISIBILITY).equals(Visibility.DEFAULT)
+						if (aClass.getSafe(ObjectKey.VISIBILITY) == Visibility.DEFAULT
 							&& aClass.qualifies(aPC, aClass))
 						{
 							Logging.debugPrint( "NPCGenerator: Selecting " + aClass + " for class " + classList.get(i) ); //$NON-NLS-1$ //$NON-NLS-2$

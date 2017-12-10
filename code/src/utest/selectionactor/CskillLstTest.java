@@ -21,9 +21,8 @@ import pcgen.cdom.base.ChooseDriver;
 import pcgen.cdom.base.ChooseSelectionActor;
 import pcgen.core.Domain;
 import pcgen.core.Skill;
-
-import org.junit.Test;
 import plugin.lsttokens.CskillLst;
+
 import selectionactor.testsupport.AbstractSelectionActorTest;
 
 public class CskillLstTest extends AbstractSelectionActorTest<Skill>

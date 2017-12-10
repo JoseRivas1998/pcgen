@@ -1,5 +1,4 @@
 /*
- * UIPropertyContext.java
  * Copyright 2010 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -29,7 +28,6 @@ import pcgen.system.PropertyContext;
 /**
  * This is a property context which holds UI related user preferences such as
  * screen position and colors.
- *
  */
 @SuppressWarnings("nls")
 public final class UIPropertyContext extends PropertyContext
@@ -257,7 +255,7 @@ public final class UIPropertyContext extends PropertyContext
 			return null;
 		}
 		String path = file.getAbsolutePath();
-		return path + "." + key;
+		return path + '.' + key;
 	}
 
 }

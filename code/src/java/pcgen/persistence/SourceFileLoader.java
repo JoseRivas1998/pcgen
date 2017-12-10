@@ -1,5 +1,4 @@
 /*
- * SourceFileLoader.java
  * Copyright 2010 Connor Petty <cpmeister@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
@@ -767,6 +766,7 @@ public class SourceFileLoader extends PCGenTask implements Observer
 		refContext.resolveReferences(validator);
 		context.resolvePostValidationTokens();
 		context.resolvePostDeferredTokens();
+		context.getVariableContext().validateDefaults();
 		ReferenceContextUtilities.validateAssociations(refContext, validator);
 		for (Equipment eq : refContext
 			.getConstructedCDOMObjects(Equipment.class))

@@ -1,5 +1,4 @@
 /*
- * TableUtils.java
  * Copyright 2011 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -28,9 +27,6 @@ import javax.swing.JTable;
 import javax.swing.JToggleButton;
 import javax.swing.table.TableColumn;
 
-/**
- *
- */
 public class TableUtils
 {
 

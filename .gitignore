@@ -27,6 +27,7 @@ pcgen.log
 pcgen.log.*
 pcgen_low_mem.bat
 
+output/
 build/
 libs/
 code/testsuite/output/
@@ -48,3 +49,5 @@ data/customsources/*
 /installers/win-installer/project.nsh
 /installers/win-installer/includes/constants.nsh
 /.checkstyle
+/installers/win-installer/includes/data.nsh
+/.nb-gradle-properties

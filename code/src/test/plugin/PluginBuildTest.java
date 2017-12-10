@@ -1,5 +1,4 @@
 /*
- * PluginBuildTest.java
  * Copyright 2007 (C) James Dempsey <jdempsey@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
@@ -26,8 +25,8 @@ import java.util.List;
 import java.util.Set;
 
 import junit.framework.Test;
-import junit.framework.TestSuite;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 /**
  * <code>PluginBuildTest</code> verifies that the pluginbuild.xml file has all 

@@ -1,5 +1,4 @@
 /*
- * PCGenTaskExecutor.java
  * Copyright 2010 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -20,6 +19,7 @@
 package pcgen.system;
 
 import java.util.LinkedList;
+
 import org.apache.commons.lang3.math.Fraction;
 
 

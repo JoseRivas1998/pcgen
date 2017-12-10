@@ -16,19 +16,18 @@
  *  License along with this library; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
- *  PcgSystemInitiative.java
  *
- *  Created on January 16, 2002, 12:27 PM
  */
 package gmgen.plugin;
 
-import gmgen.plugin.dice.Dice;
 import pcgen.cdom.util.CControl;
 import pcgen.cdom.util.ControlUtilities;
 import pcgen.core.Globals;
 import pcgen.core.PCStat;
 import pcgen.core.PlayerCharacter;
 import pcgen.core.display.CharacterDisplay;
+
+import gmgen.plugin.dice.Dice;
 
 public class PcgSystemInitiative extends SystemInitiative
 {

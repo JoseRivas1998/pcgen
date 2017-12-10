@@ -1,5 +1,4 @@
 /*
- * PCLevelInfoStat.java
  * Copyright 2001 (C) Greg Bingleman <byngl@hotmail.com>
  *
  * This library is free software; you can redistribute it and/or
@@ -32,7 +31,6 @@ public final class PCLevelInfoStat implements Serializable
 
 	PCLevelInfoStat(final PCStat pcstat, final int argMod)
 	{
-		super();
 		stat = pcstat;
 		mod = argMod;
 	}

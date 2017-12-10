@@ -1,5 +1,4 @@
 /*
- * PCGenMenuBar.java
  * Copyright 2008 Connor Petty <cpmeister@users.sourceforge.net>
  * 
  * This library is free software; you can redistribute it and/or
@@ -32,14 +31,14 @@ import javax.swing.JMenuItem;
 
 import pcgen.facade.core.CharacterFacade;
 import pcgen.facade.core.EquipmentSetFacade;
-import pcgen.facade.util.ReferenceFacade;
 import pcgen.facade.core.SourceSelectionFacade;
 import pcgen.facade.core.TempBonusFacade;
-import pcgen.facade.util.event.ReferenceEvent;
-import pcgen.facade.util.event.ReferenceListener;
 import pcgen.facade.util.DefaultListFacade;
 import pcgen.facade.util.ListFacade;
+import pcgen.facade.util.ReferenceFacade;
 import pcgen.facade.util.SortedListFacade;
+import pcgen.facade.util.event.ReferenceEvent;
+import pcgen.facade.util.event.ReferenceListener;
 import pcgen.gui2.tools.CharacterSelectionListener;
 import pcgen.gui2.util.AbstractListMenu;
 import pcgen.gui2.util.AbstractRadioListMenu;
